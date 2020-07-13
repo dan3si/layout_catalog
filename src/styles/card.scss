@@ -10,7 +10,7 @@
 }
 
 $img-border-width: 3px;
-$img-padding: 10px;
+$img-padding: 13px;
 
 .card {
   width: 200px;
@@ -25,7 +25,7 @@ $img-padding: 10px;
 .card__image {
   width: $img-border-width * 2 + 160px;
   height: $img-border-width * 2 + 134px + $img-padding;
-  padding-top: $img-padding;
+  padding: $img-padding 0;
   align-self: center;
   border: $img-border-width solid transparent;
   transition: transform 1s;
@@ -38,7 +38,7 @@ $img-padding: 10px;
 }
 
 .card__heading {
-  margin: 45px - $img-border-width 0 0;
+  margin: 45px - $img-border-width - $img-padding 0 0;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
