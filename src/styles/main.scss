@@ -10,23 +10,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.main {
-  padding-left: 2px;
-}
+$grid-gap-x: 48px;
+$grid-gap-y: 50px;
 
 .catalog-container {
-  max-width: 946px;
-  display: flex;
-  flex-wrap: wrap;
+  max-width: ($card-width * 4) + ($grid-gap-x * 3);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, $card-width);
+  grid-column-gap: $grid-gap-x;
+  grid-row-gap: $grid-gap-y;
   margin: 50px auto 0;
-}
-
-.catalog-container .card {
-  &:nth-child(n+5) {
-    margin-top: 50px;
-  }
-
-  &:not(:nth-child(4n)) {
-    margin-right: 48px;
-  }
 }
