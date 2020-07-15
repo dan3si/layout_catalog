@@ -16,8 +16,7 @@ $grid-gap-y: 50px;
 .catalog-container {
   max-width: ($card-width * 4) + ($grid-gap-x * 3);
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, $card-width);
   grid-column-gap: $grid-gap-x;
   grid-row-gap: $grid-gap-y;
   margin: 50px auto 0;
